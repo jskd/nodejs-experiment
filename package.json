@@ -1,0 +1,10 @@
+{
+  "name": "nodejs_experiment",
+  "version": "1.0.0",
+  "description": "nodejs_experiment",
+  "author": "Jérôme SKODA <contact@jeromeskoda.fr>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

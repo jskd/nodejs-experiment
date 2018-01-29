@@ -10,10 +10,17 @@
   "license": "GPL-3.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "serve-favicon": "~2.4.5"
   },
   "bugs": {
     "url": "https://github.com/jskd/nodejs-experiment/issues"

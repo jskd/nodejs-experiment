@@ -2,9 +2,22 @@
   "name": "nodejs_experiment",
   "version": "1.0.0",
   "description": "nodejs_experiment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jskd/nodejs-experiment.git"
+  },
   "author": "Jérôme SKODA <contact@jeromeskoda.fr>",
+  "license": "GPL-3.0",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
-  }
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "bugs": {
+    "url": "https://github.com/jskd/nodejs-experiment/issues"
+  },
+  "homepage": "https://github.com/jskd/nodejs-experiment#readme",
+  "devDependencies": {}
 }

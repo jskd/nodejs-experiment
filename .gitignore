@@ -1,5 +1,6 @@
 # From typeorm
 
+package-lock.json
 .idea/
 .vscode/
 node_modules/

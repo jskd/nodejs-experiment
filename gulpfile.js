@@ -8,6 +8,7 @@ var filter = require('gulp-filter');
 var uglify = require('gulp-uglify');
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
+var cleanCSS = require('gulp-clean-css');
 
 var tsProject = ts.createProject("tsconfig.json");
 
@@ -26,8 +27,8 @@ gulp.task('views', function () {
 
 gulp.task('public_javascripts', function(){
    gulp.src('src/public/javascripts/**/*.js')
-   .pipe(concat('out.js'))
    .pipe(uglify())
+   .pipe(concat('script.js'))
    .pipe(gulp.dest('dist/public/javascripts'));
 });
 
@@ -54,7 +55,8 @@ gulp.task('public_stylesheets', function () {
   .pipe(filter_stylus)
   .pipe(stylus())
   .pipe(filter_stylus.restore)
-  .pipe(concat('out.css'))
+  .pipe(concat('style.css'))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(gulp.dest('dist/public/stylesheets'));
 
 });

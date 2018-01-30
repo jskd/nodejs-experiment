@@ -26,7 +26,7 @@ gulp.task('views', function () {
 
 gulp.task('public_javascripts', function(){
    gulp.src('src/public/javascripts/**/*.js')
-   .pipe(concat('script.js'))
+   .pipe(concat('out.js'))
    .pipe(uglify())
    .pipe(gulp.dest('dist/public/javascripts'));
 });
@@ -36,8 +36,8 @@ gulp.task('public_image', function() {
    .pipe(changed('dist/public/images/'))
    .pipe(imagemin([
      imagemin.gifsicle({interlaced: true}),
-imagemin.jpegtran({progressive: true}),
-imagemin.optipng({optimizationLevel: 5}),
+     imagemin.jpegtran({progressive: true}),
+     imagemin.optipng({optimizationLevel: 5}),
    ]))
    .pipe(gulp.dest('dist/public/images/'));
 });

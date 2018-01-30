@@ -1,3 +1,12 @@
+# From typeorm
+
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+
 # Logs
 logs
 *.log

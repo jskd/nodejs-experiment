@@ -18,17 +18,26 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
-    "gulp": "^3.9.1",
-    "gulp-pug": "^3.3.0",
-    "gulp-typescript": "^3.2.4",
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5",
+    "stylus": "^0.54.5",
     "typescript": "^2.6.2"
   },
   "bugs": {
     "url": "https://github.com/jskd/nodejs-experiment/issues"
   },
   "homepage": "https://github.com/jskd/nodejs-experiment#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-typescript": "^3.2.4",
+    "gulp-uglify": "^3.0.0"
+  }
 }

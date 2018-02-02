@@ -1,4 +1,5 @@
 import {UserController} from "./controller/UserController";
+import {FarmController} from "./controller/FarmController";
 
 export const Routes = [{
     method: "get",
@@ -20,4 +21,9 @@ export const Routes = [{
     route: "/users",
     controller: UserController,
     action: "remove"
+}, {
+    method: "get",
+    route: "/farm",
+    controller: FarmController,
+    action: "all"
 }];
